@@ -1,0 +1,118 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "LIST_OF_PRODUCTS",
+        "values": [
+          {
+            "id": "4114992",
+            "name": {
+              "value": "kitchen paper",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "6185822",
+            "name": {
+              "value": "coke",
+              "synonyms": [
+                "coca-cola"
+              ]
+            }
+          },
+          {
+            "id": "2885107",
+            "name": {
+              "value": "carrots",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4905303",
+            "name": {
+              "value": "tomato sauce",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "4954144",
+            "name": {
+              "value": "rice",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "5564749",
+            "name": {
+              "value": "burguers",
+              "synonyms": [
+                "hamburguers"
+              ]
+            }
+          },
+          {
+            "id": "3788594",
+            "name": {
+              "value": "eggs",
+              "synonyms": []
+            }
+          },
+          {
+            "id": "2050575",
+            "name": {
+              "value": "orange juice",
+              "synonyms": []
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "Add",
+        "samples": [
+          "add {Product}",
+          "buy {Product}",
+          "get {Product}"
+        ],
+        "slots": [
+          {
+            "name": "Product",
+            "type": "LIST_OF_PRODUCTS"
+          }
+        ]
+      },
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": [
+          "No"
+        ]
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": [
+          "what can I do"
+        ]
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "Summary",
+        "samples": [
+          "summary",
+          "give me the summary",
+          "shopping cart summary",
+          "about shopping cart",
+          "about next buy",
+          "basket",
+          "basket summary",
+          "about basket"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "continent"
+  }
+}
