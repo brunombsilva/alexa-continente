@@ -8,7 +8,7 @@ def create(continente, logger, schema):
     @ask.launch
     def launch():
         logger.debug('launch')
-        continente.loggerin_async()
+        continente.login_async()
         return question('What would you like to do?') \
                 .reprompt("I didn't get that. What can I do for you?")
 
